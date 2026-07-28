@@ -5,7 +5,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <span className="footer-text">&copy; 2025 Feito por Victor Ezaki</span>
+      <span className="footer-text">&copy; 2026 Feito por Victor Ezaki</span>
       <div id="img">
         <a
           className="icon-btn pixel-round-sm"

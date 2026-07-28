@@ -1,148 +1,119 @@
 .sobre {
-
-    padding: 2rem;
-
-    font-family: monospace;
-
-    color: var(--text-light);
-
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  font-family: monospace;
+  color: var(--text-light);
 }
 
-
-.sobre-header {
-
-    margin-bottom: 2rem;
-
+/* ===== TOPO: foto + apresentação lado a lado ===== */
+.sobre-top {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 1.25rem;
+  align-items: center;
 }
 
-
-.sobre-header .page-title {
-
-    color: var(--color-gold);
-
-    letter-spacing: 3px;
-
-    text-shadow: 2px 2px 0 var(--border-pixel);
-
-    margin-bottom: 1.5rem;
-
+.img-perfil {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--bg-primary);
+  box-shadow: 4px 4px 0 var(--border-pixel);
+  padding: 6px;
+  image-rendering: pixelated;
 }
 
-
+.img-perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  clip-path: inherit;
+}
 
 .profile-card {
-
-    background: var(--bg-primary);
-
-    border: 4px solid var(--border-pixel);
-
-    box-shadow: 4px 4px 0 var(--border-pixel);
-
-    padding: 1.5rem;
-
-    max-width: 800px;
-
+  background: var(--bg-primary);
+  border: 4px solid var(--border-pixel);
+  box-shadow: 4px 4px 0 var(--border-pixel);
+  padding: 1rem 1.25rem;
 }
 
-
+.profile-card .page-title {
+  color: var(--color-gold);
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 0 var(--border-pixel);
+  margin-bottom: 0.6rem;
+}
 
 .profile-card h2 {
-
-    color: var(--color-gold);
-
-    text-shadow: 2px 2px 0 var(--border-pixel);
-
-    letter-spacing: 2px;
-
-    margin-bottom: .75rem;
-
+  color: var(--color-gold);
+  text-shadow: 2px 2px 0 var(--border-pixel);
+  letter-spacing: 2px;
+  margin-bottom: 0.3rem;
 }
-
-
 
 .profile-card h3 {
-
-    color: var(--color-highlight);
-
-    font-size: 1rem;
-
-    font-weight: normal;
-
+  color: var(--color-highlight);
+  font-size: 1rem;
+  font-weight: normal;
 }
 
-
+/* ===== TEXTO: lead + content grudados, parecendo um bloco só ===== */
+.sobre-lead {
+  background: var(--bg-primary);
+  border: 4px solid var(--border-pixel);
+  border-bottom: none;
+  padding: 1rem 1.25rem;
+  line-height: 1.55;
+}
 
 .sobre-content {
-
-    background: var(--bg-primary);
-
-    border: 4px solid var(--border-pixel);
-
-    box-shadow: 4px 4px 0 var(--border-pixel);
-
-    padding: 1.75rem;
-
-    max-width: 900px;
-
-    line-height: 1.8;
-
+  background: var(--bg-primary);
+  border: 4px solid var(--border-pixel);
+  border-top: none;
+  box-shadow: 4px 4px 0 var(--border-pixel);
+  padding: 1.25rem 1.5rem;
+  line-height: 1.55;
 }
 
-
-
+.sobre-lead p,
 .sobre-content p {
-
-    margin-bottom: 1.25rem;
-
+  margin-bottom: 0.85rem;
 }
 
-
-
+.sobre-lead p:last-child,
 .sobre-content p:last-child {
-
-    margin-bottom: 0;
-
+  margin-bottom: 0;
 }
 
-
-
+.sobre-lead strong,
 .sobre-content strong {
-
-    color: var(--color-gold);
-
+  color: var(--color-gold);
 }
-
-
 
 .sobre-content span {
-
-    color: var(--color-highlight);
-
+  color: var(--color-highlight);
 }
 
+@media (max-width: 768px) {
+  .sobre {
+    padding: 1rem;
+  }
 
+  .sobre-top {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
 
-@media(max-width:768px) {
+  .img-perfil {
+    max-width: 180px;
+  }
 
-    .sobre {
-
-        padding: 1rem;
-
-    }
-
-
-    .sobre-content,
-    .profile-card {
-
-        padding: 1rem;
-
-    }
-
-
-    .profile-card h2 {
-
-        font-size: 1.2rem;
-
-    }
-
+  .sobre-content,
+  .sobre-lead,
+  .profile-card {
+    padding: 0.85rem 1rem;
+  }
 }

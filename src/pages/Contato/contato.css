@@ -1,0 +1,61 @@
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    font-family: monospace;
+    color: var(--text-light);
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0.65rem 1.1rem;
+}
+
+.container {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0.65rem 1.1rem;
+    background: var(--bg-primary);
+    box-shadow: 3px 3px 0 var(--border-pixel);
+    transition: color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+
+.download-btn:hover {
+    color: var(--bg-deep);
+    background: var(--color-highlight);
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 var(--border-pixel);
+}
+
+.download-btn:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0 var(--border-pixel);
+}
+
+.contato-links {
+    display: flex;
+    gap: 1.1rem;
+}
+
+.contato-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: var(--text-light);
+}
+
+.contato-links a:hover {
+    background: var(--color-highlight);
+    color: var(--bg-deep);
+    transform: translateY(-3px);
+}

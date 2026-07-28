@@ -3,7 +3,7 @@ export const projects = [
     id: "projeto-1",
     title: "Saldo Verde",
     description:
-      "Aplicação desktop desenvolvida em C# para auxiliar usuários no controle do consumo de energia elétrica, promovendo hábitos mais sustentáveis. O sistema permite registrar o consumo, acompanhar gastos e visualizar informações de forma simples e intuitiva, incentivando a economia de energia e a conscientização ambiental.",
+      "Aplicação desktop desenvolvida em C# para auxiliar usuários no controle financeiro. O sistema permite registrar o consumo, acompanhar gastos e visualizar informações de forma simples e intuitiva, incentivando a economia de energia e a conscientização ambiental.",
     github: "https://github.com/vdallabona/PI---Contador",
     technologies: [
       "C#",
@@ -32,7 +32,7 @@ export const projects = [
     id: "projeto-3",
     title: "Finance App",
     description:
-      "API REST para gerenciamento financeiro pessoal desenvolvida com Node.js, Express e Sequelize. Possui autenticação com JWT, criptografia de senhas utilizando bcrypt, gerenciamento de usuários, categorias e despesas, além de testes automatizados com Jest, seguindo boas práticas de arquitetura em camadas.",
+      "Aplicação FullStack para gerenciamento financeiro pessoal desenvolvida com Node.js, Express e Sequelize. Possui autenticação com JWT, criptografia de senhas utilizando bcrypt, gerenciamento de usuários, categorias e despesas, além de testes automatizados com Jest, seguindo boas práticas de arquitetura em camadas.",
     github: "https://github.com/VictorEzaki/trabalho_final",
     technologies: [
       "Node.js",

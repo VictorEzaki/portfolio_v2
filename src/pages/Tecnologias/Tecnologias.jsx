@@ -92,6 +92,7 @@ export default function Tecnologias() {
 
                     <ul>
                         <li>MySQL</li>
+                        <li>PostgreSQL</li>
                     </ul>
                 </article>
 
@@ -100,6 +101,7 @@ export default function Tecnologias() {
 
                     <ul>
                         <li>Jest</li>
+                        <li>pestPHP</li>
                     </ul>
                 </article>
 

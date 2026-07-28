@@ -3,26 +3,19 @@ import "./sobre.css";
 function Sobre() {
   return (
     <section className="sobre">
-
-      <header className="sobre-header">
-        <h1 className="page-title">Sobre</h1>
+      <div className="sobre-top">
+        <div className="img-perfil pixel-round-sm">
+          <img src="https://github.com/victorezaki.png" alt="Imagem de perfil do github" />
+        </div>
 
         <div className="profile-card">
-
-          <h2>
-            Victor Takeyoshi Kieper Ezaki
-          </h2>
-
-          <h3>
-            Estudante de Análise e Desenvolvimento de Sistemas
-          </h3>
-
+          <h1 className="page-title">Sobre</h1>
+          <h2>Victor Takeyoshi Kieper Ezaki</h2>
+          <h3>Estudante de Análise e Desenvolvimento de Sistemas</h3>
         </div>
-      </header>
-
+      </div>
 
       <article className="sobre-content">
-
         <p>
           <strong>Olá, mundo!</strong> Sou o Victor, tenho 23 anos e sou
           natural de Joinville. Atualmente, curso o 4º período de Análise e
@@ -30,7 +23,6 @@ function Sobre() {
           desenvolvedor, aplicando na prática os conhecimentos adquiridos ao
           longo da minha formação.
         </p>
-
         <p>
           Tenho grande interesse em criar soluções Full Stack, mas foi no
           <span> Back-End </span>
@@ -47,9 +39,7 @@ function Sobre() {
           tecnologia começa com a curiosidade de entender como as coisas
           funcionam.
         </p>
-
       </article>
-
     </section>
   );
 }
