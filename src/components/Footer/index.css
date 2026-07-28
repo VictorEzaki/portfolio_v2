@@ -1,0 +1,32 @@
+.footer {
+  background: var(--bg-deep);
+  border-top: 4px solid var(--border-pixel);
+  box-shadow: 0 -4px 0 var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+.footer-text {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+#img {
+  display: flex;
+  gap: 1.1rem;
+}
+
+#img a {
+  color: var(--text-light);
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+#img a:hover {
+  color: var(--color-highlight);
+  transform: translateY(-3px);
+}

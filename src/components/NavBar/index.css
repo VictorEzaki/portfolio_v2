@@ -1,0 +1,20 @@
+.nav-link {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+  background: var(--bg-primary);
+  box-shadow: 3px 3px 0 var(--border-pixel);
+  transition: transform 0.1s ease, background 0.15s ease, color 0.15s ease;
+}
+.nav-link:hover {
+  color: var(--bg-deep);
+  background: var(--color-highlight);
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--border-pixel);
+}
+.nav-link:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 var(--border-pixel);
+}
