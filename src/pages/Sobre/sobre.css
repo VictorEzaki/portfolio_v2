@@ -1,0 +1,148 @@
+.sobre {
+
+    padding: 2rem;
+
+    font-family: monospace;
+
+    color: var(--text-light);
+
+}
+
+
+.sobre-header {
+
+    margin-bottom: 2rem;
+
+}
+
+
+.sobre-header .page-title {
+
+    color: var(--color-gold);
+
+    letter-spacing: 3px;
+
+    text-shadow: 2px 2px 0 var(--border-pixel);
+
+    margin-bottom: 1.5rem;
+
+}
+
+
+
+.profile-card {
+
+    background: var(--bg-primary);
+
+    border: 4px solid var(--border-pixel);
+
+    box-shadow: 4px 4px 0 var(--border-pixel);
+
+    padding: 1.5rem;
+
+    max-width: 800px;
+
+}
+
+
+
+.profile-card h2 {
+
+    color: var(--color-gold);
+
+    text-shadow: 2px 2px 0 var(--border-pixel);
+
+    letter-spacing: 2px;
+
+    margin-bottom: .75rem;
+
+}
+
+
+
+.profile-card h3 {
+
+    color: var(--color-highlight);
+
+    font-size: 1rem;
+
+    font-weight: normal;
+
+}
+
+
+
+.sobre-content {
+
+    background: var(--bg-primary);
+
+    border: 4px solid var(--border-pixel);
+
+    box-shadow: 4px 4px 0 var(--border-pixel);
+
+    padding: 1.75rem;
+
+    max-width: 900px;
+
+    line-height: 1.8;
+
+}
+
+
+
+.sobre-content p {
+
+    margin-bottom: 1.25rem;
+
+}
+
+
+
+.sobre-content p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+
+.sobre-content strong {
+
+    color: var(--color-gold);
+
+}
+
+
+
+.sobre-content span {
+
+    color: var(--color-highlight);
+
+}
+
+
+
+@media(max-width:768px) {
+
+    .sobre {
+
+        padding: 1rem;
+
+    }
+
+
+    .sobre-content,
+    .profile-card {
+
+        padding: 1rem;
+
+    }
+
+
+    .profile-card h2 {
+
+        font-size: 1.2rem;
+
+    }
+
+}

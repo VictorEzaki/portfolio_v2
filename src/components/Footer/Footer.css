@@ -21,12 +21,19 @@
   gap: 1.1rem;
 }
 
-#img a {
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--bg-primary);
   color: var(--text-light);
-  transition: color 0.15s ease, transform 0.15s ease;
+  transition: color 0.15s ease, background 0.15s ease, transform 0.15s ease;
 }
 
-#img a:hover {
-  color: var(--color-highlight);
+.icon-btn:hover {
+  background: var(--color-highlight);
+  color: var(--bg-deep);
   transform: translateY(-3px);
 }
