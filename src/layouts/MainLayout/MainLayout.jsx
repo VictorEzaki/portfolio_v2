@@ -6,13 +6,15 @@ import "./MainLayout.css";
 function MainLayout() {
   return (
     <div className="app-shell">
-      <NavBar />
-      <div className="content-wrapper">
-        <main className="content-area">
-          <Outlet />
-        </main>
-        <Footer />
+      <div className="main-row">
+        <NavBar />
+        <div className="content-area">
+          <main className="page-card pixel-round-lg">
+            <Outlet />
+          </main>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }

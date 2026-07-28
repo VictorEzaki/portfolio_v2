@@ -33,7 +33,7 @@ function NavBar() {
   }
 
   return (
-    <nav className="side-nav">
+    <nav className="side-nav pixel-round-lg">
       <div className="side-nav-title">MENU</div>
 
       {!showProjects && (

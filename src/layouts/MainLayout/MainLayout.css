@@ -1,16 +1,33 @@
 .app-shell {
   display: flex;
-  min-height: 100vh;
-}
-
-.content-wrapper {
-  flex: 1;
-  display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/* Linha com o menu flutuante + o card de conteúdo, centralizados verticalmente */
+.main-row {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2.5rem;
+}
+
+/* Centraliza o card na área que sobra ao lado do menu */
 .content-area {
   flex: 1;
-  padding: 2.5rem 3rem;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* O "card" flutuante onde as páginas são renderizadas */
+.page-card {
+  width: 100%;
+  max-width: 1100px;
+  max-height: calc(100vh - 9rem);
+  overflow-y: auto;
+  background: var(--bg-surface);
+  box-shadow: 6px 6px 0 var(--border-pixel);
 }
