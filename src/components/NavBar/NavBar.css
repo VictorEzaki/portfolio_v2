@@ -66,3 +66,20 @@
   color: var(--bg-deep);
   background: var(--color-highlight);
 }
+
+/* ===== ANIMAÇÃO DE ENTRADA DOS ITENS DO MENU ===== */
+@keyframes navItemIn {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.side-nav-list li {
+  opacity: 0;
+  animation: navItemIn 0.35s ease-out forwards;
+}
